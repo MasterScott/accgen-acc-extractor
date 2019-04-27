@@ -7,9 +7,9 @@
 - Steam Account generator api key ([Get one here with the /request command](https://t.me/sag_stats_bot))
 
 ## Step-By-Step
-- clone this Project using either the git client or "Download as zip"
-- run `npm i` Inside the project folder to install all needed Dependencies
-- edit apikey.json and insert your own apikey in the "Insert your api key" Field (Keep the quotes).
+- Clone this Project using either the git client or "Download as zip"
+- Run `npm i` Inside the project folder to install all needed Dependencies
+- Edit apikey.json and insert your own apikey in the "Insert your api key" Field (Keep the quotes).
 - Run `node convert.js`, Accounts will be output in the accounts.txt.
 
 ## Issues
