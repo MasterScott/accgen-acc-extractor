@@ -6,7 +6,7 @@ var { apikey } = require("./apikey.json");
 // Check just in case
 if (apikey == "Insert your api key")
     return console.log("Please edit apikey.json and add your api key");
-accounts = fs.readFileSync("accounts.txt");
+account = "";
 
 // WARNING setting this to a higher value may get you manually banned from our API
 var default_extract_count = 450;
@@ -36,9 +36,9 @@ function StoreAccount() {
                 return;
             }
             // Add account to list
-            accounts = accounts + body.login + ":" + body.password + "\n";
+            account = body.login + ":" + body.password + "\n";
             // Write to file
-            fs.writeFileSync("accounts.txt", accounts);
+            fs.appendFileSync("accounts.txt", account);
             // Increment account count
             i++;
             // Every 5 commands
