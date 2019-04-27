@@ -2,10 +2,15 @@
 
 *This tool just helps in Extracting accounts from your api key in the user:pass format without too much hassle*
 
-First you will want to edit apikey.json and insert your own apikey in the "Insert your api key" Field (Keep the quotes).
+## Requirements:
+- Node.js ([Windows link](https://nodejs.org))
+- Steam Account generator api key ([Get one here with the /request command](https://t.me/sag_stats_bot))
 
-Then To Get Your accounts:
-- Simply use Node.js ([Windows link](https://nodejs.org)) and run `node convert.js`, Accounts will be output in the accounts.txt.
+## Step-By-Step
+- clone this Project using either the git client or "Download as zip"
+- run `npm i` Inside the project folder to install all needed Dependencies
+- edit apikey.json and insert your own apikey in the "Insert your api key" Field (Keep the quotes).
+- Run `node convert.js`, Accounts will be output in the accounts.txt.
 
 ## Issues
 For issues please use the [Issue Tracker](https://github.com/nullworks/accgen-acc-extractor/issues)
