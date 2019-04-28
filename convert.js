@@ -7,6 +7,8 @@ var { apikey } = require("./apikey.json");
 if (apikey == "Insert your api key")
     return console.log("Please edit apikey.json and add your api key");
 account = "";
+// Cross platform :tm:
+var endOfLine = require('os').EOL;
 
 // WARNING setting this to a higher value may get you manually banned from our API
 var default_extract_count = 450;
@@ -36,16 +38,14 @@ function StoreAccount() {
                 return;
             }
             // Add account to list
-            account = body.login + ":" + body.password + "\n";
+            account = body.login + ":" + body.password + endOfLine;
             // Write to file
             fs.appendFileSync("accounts.txt", account);
             // Increment account count
             i++;
-            // Every 5 commands
-            if (i % 4 == 0)
-                console.log("5 Accounts added");
+            console.log("Account added");
             // Call itself after 10ms
-            setTimeout(() => { StoreAccount(); }, 10);
+            setTimeout(() => { StoreAccount(); }, 2500);
             return;
         });
     }
