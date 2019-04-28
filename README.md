@@ -8,9 +8,9 @@
 
 ## Step-By-Step
 - Clone this Project using either the git client or "Download as zip"
-- Run `npm i` Inside the project folder to install all needed Dependencies
+- Run install.bat or `npm i` Inside the project folder to install all needed Dependencies
 - Edit apikey.json and insert your own apikey in the "Insert your api key" Field (Keep the quotes).
-- Run `node convert.js`, Accounts will be output in the accounts.txt.
+- Run start.bat or `node convert.js`, Accounts will be output in the accounts.txt.
 
 ## Notice
 We've added a variable named `default_extract_count`, You can modify if you want, BUT if you set it too high you may get banned for API Abuse, so i do NOT recommend it.
